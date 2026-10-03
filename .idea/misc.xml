@@ -8,7 +8,13 @@
         <option value="$PROJECT_DIR$/SpringJpa/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-boot-rest-api/pom.xml" />
         <option value="$PROJECT_DIR$/SpringRestApi/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootRestApi/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/SpringBootRestApi/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK">
