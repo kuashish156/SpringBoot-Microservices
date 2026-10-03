@@ -12,6 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="SpringBootRestApi" target="17" />
+      <module name="SpringJpa (1)" target="17" />
       <module name="SpringRestApi" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -20,6 +21,7 @@
       <module name="Demo" options="-parameters" />
       <module name="SpringBootRestApi" options="-parameters" />
       <module name="SpringJpa" options="-parameters" />
+      <module name="SpringJpa (1)" options="-parameters" />
       <module name="SpringRestApi" options="-parameters" />
     </option>
   </component>
