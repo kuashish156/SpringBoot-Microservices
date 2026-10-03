@@ -31,7 +31,7 @@ public class UserServiceImpl implements UserService{
 
     public User findByIdUsingJava8(Integer userId) {
         return userRepository.findById(userId)
-                .orElseThrow(()-> new RuntimeException("user not found in Db"));
+                .orElseThrow(()-> new RuntimeException("user not found in Database "));
 
     }
 
