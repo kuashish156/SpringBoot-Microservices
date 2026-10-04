@@ -76,3 +76,62 @@
 2:19:25 Memory Pressure: Moderate
 2:19:35 Memory Pressure: Moderate
 2:19:45 Memory Pressure: Moderate
+2:19:55 Memory Pressure: Moderate
+2:20:05 Memory Pressure: Moderate
+2:20:10 Memory Pressure: None
+2:20:45 Memory Pressure: Moderate
+2:20:50 Memory Pressure: None
+2:21:10 Memory Pressure: Moderate
+2:21:20 Memory Pressure: Moderate
+2:21:26 Microsoft.NewBrowser_Popup
+2:21:27 Microsoft.BrowserList.AddBrowser
+2:21:27 Browser15 Insert active Tab15 at 0
+2:21:28 Tab15 StartNav330 #auto_toplevel
+2:21:28 Tab15 StartNav331 #typed
+2:21:28 Tab15 FinishNav330
+2:21:28 Tab15 PageLoad
+2:21:28 Tab15 FinishNav331
+2:21:28 Tab15 PageLoad
+2:21:28 Tab15 StartNav332 #typed
+2:21:28 Tab15 FinishNav332
+2:21:28 Tab15 PageLoad
+2:21:30 Tab15 StartNav333 #typed
+2:21:30 Tab15 FinishNav333
+2:21:30 Tab15 PageLoad
+2:21:30 Memory Pressure: Moderate
+2:21:32 Tab15 StartNav334 #typed
+2:21:32 Tab15 FinishNav334
+2:21:32 Tab15 PageLoad
+2:21:40 Memory Pressure: Moderate
+2:21:40 Tab13 StartNav335 #typed
+2:21:40 Tab13 FinishNav335
+2:21:40 Tab13 PageLoad
+2:21:44 Tab13 StartNav336 #typed
+2:21:44 Tab13 FinishNav336
+2:21:44 Tab13 PageLoad
+2:21:46 Tab13 StartNav337 #typed
+2:21:46 Tab13 FinishNav337
+2:21:46 Tab13 PageLoad
+2:21:48 Tab13 StartNav338 #typed
+2:21:48 Tab13 FinishNav338
+2:21:48 Tab13 PageLoad
+2:21:50 Memory Pressure: Moderate
+2:22:00 Memory Pressure: Moderate
+2:22:10 Memory Pressure: Critical
+2:22:15 Memory Pressure: Critical
+2:22:20 Memory Pressure: Critical
+2:22:25 Memory Pressure: Moderate
+2:22:30 Memory Pressure: Critical
+2:22:34 Tab13 StartNav339 #typed
+2:22:34 Tab13 FinishNav339
+2:22:34 Tab13 PageLoad
+2:22:35 Memory Pressure: Critical
+2:22:40 Memory Pressure: Critical
+2:22:45 Memory Pressure: Moderate
+2:22:50 Memory Pressure: Critical
+2:22:55 Memory Pressure: Moderate
+2:23:05 Memory Pressure: Moderate
+2:23:15 Memory Pressure: Moderate
+2:23:25 Memory Pressure: Moderate
+2:23:35 Memory Pressure: Moderate
+2:23:45 Memory Pressure: Moderate

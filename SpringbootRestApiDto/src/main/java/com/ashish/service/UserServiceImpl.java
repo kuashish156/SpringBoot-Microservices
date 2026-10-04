@@ -50,7 +50,7 @@ public class UserServiceImpl implements UserService{
         if (optional.isPresent()) {
           return optional.get();
         } else {
-            throw new RuntimeException("user not found in db");
+            throw new RuntimeException("user not found in db .....");
         }
 
     }
