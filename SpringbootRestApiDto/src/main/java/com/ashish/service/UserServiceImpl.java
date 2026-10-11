@@ -1,6 +1,7 @@
 package com.ashish.service;
 
 import com.ashish.dto.UserDto;
+import com.ashish.exception.UserNotFoundException;
 import com.ashish.models.User;
 import com.ashish.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,14 +51,14 @@ public class UserServiceImpl implements UserService{
         if (optional.isPresent()) {
           return optional.get();
         } else {
-            throw new RuntimeException("user not found in db .....");
+            throw new UserNotFoundException("user not found in db .....");
         }
 
     }
 
     public User findByIdUsingJava8(Integer userId) {
         return userRepository.findById(userId)
-                .orElseThrow(()-> new RuntimeException("user not found in Database "));
+                .orElseThrow(()-> new UserNotFoundException("user not found in Database "));
 
     }
 

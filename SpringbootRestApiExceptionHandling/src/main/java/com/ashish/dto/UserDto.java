@@ -1,0 +1,60 @@
+package com.ashish.dto;
+
+public class UserDto {
+	
+	 private Integer userId;
+     private String  yourFirstName;
+     private String  yourLastName;
+     private String  emailAddress;
+     private String  phoneNumber;
+     
+     public UserDto() {
+		// TODO Auto-generated constructor stub
+	}
+
+	 public Integer getUserId() {
+		 return userId;
+	 }
+
+	 public void setUserId(Integer userId) {
+		 this.userId = userId;
+	 }
+
+	 public String getYourFirstName() {
+		 return yourFirstName;
+	 }
+
+	 public void setYourFirstName(String yourFirstName) {
+		 this.yourFirstName = yourFirstName;
+	 }
+
+	 public String getYourLastName() {
+		 return yourLastName;
+	 }
+
+	 public void setYourLastName(String yourLastName) {
+		 this.yourLastName = yourLastName;
+	 }
+
+	 public String getEmailAddress() {
+		 return emailAddress;
+	 }
+
+	 public void setEmailAddress(String emailAddress) {
+		 this.emailAddress = emailAddress;
+	 }
+
+	 public String getPhoneNumber() {
+		 return phoneNumber;
+	 }
+
+	 public void setPhoneNumber(String phoneNumber) {
+		 this.phoneNumber = phoneNumber;
+	 }
+
+	 
+     
+     
+     
+
+}
