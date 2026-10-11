@@ -27,7 +27,7 @@ public class UserServiceImpl implements UserService{
     	user.setEmail(userDto.getEmailAddress());
     	user.setPhone(userDto.getPhoneNumber());
 
-    	// TODO -  @Queary 
+    	// TODO -  jpa  @Queary  
     	// verify in db | if not exit than create user  | if exit than show error record already exit in database 
     	
     	

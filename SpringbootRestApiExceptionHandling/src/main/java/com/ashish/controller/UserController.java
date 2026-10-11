@@ -19,6 +19,8 @@ import com.ashish.dto.UserDto;
 import com.ashish.models.User;
 import com.ashish.service.UserService;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
@@ -31,7 +33,7 @@ public class UserController {
 
 	@PostMapping
 	@ResponseStatus(code = HttpStatus.CREATED)
-	public UserDto createUser(@RequestBody UserDto userDto) {
+	public UserDto createUser( @Valid @RequestBody UserDto userDto) {
 		log.info("UserController :: createUser for {}" ,userDto.getEmailAddress());
 		return userService.save(userDto);
 
@@ -44,7 +46,7 @@ public class UserController {
 	}
 
 	@PutMapping("/{userId}")
-	public User updateUser(@PathVariable Integer userId, @RequestBody User inputUser) {
+	public User updateUser(@PathVariable Integer userId, @Valid @RequestBody User inputUser) {
 		log.info("UserController :: updateUser for  {} {}" ,userId ,inputUser.getEmail());
 		return userService.update(userId, inputUser);
 
