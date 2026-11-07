@@ -1,6 +1,5 @@
 package com.ashish.userservice.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.ashish.userservice.dto.UserDto;
@@ -9,13 +8,16 @@ import com.ashish.userservice.models.Credential;
 import com.ashish.userservice.models.User;
 import com.ashish.userservice.repository.UserRepository;
 
+import lombok.RequiredArgsConstructor;
+
 @Service
+@RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
 
-	@Autowired
-	private UserRepository userRepository;
-	@Autowired
-	private UserMapper userMapper;
+	
+	private final UserRepository userRepository;
+	
+	private final UserMapper userMapper;
 
 	@Override
 	public UserDto createUser(UserDto userDto) {
