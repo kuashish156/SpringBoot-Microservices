@@ -1,5 +1,7 @@
 package com.ashish.userservice.dto;
 
+import com.ashish.userservice.encrypt.MaskData;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,12 +13,13 @@ import lombok.Setter;
 @NoArgsConstructor
 public class UserDto {
 
-	
-	
 	private String firstName;
 	private String lastName;
+
+	@MaskData
 	private String emailAdress;
+	@MaskData
 	private String contectNumber;
-	
+
 	private CredentialDto credential;
 }
