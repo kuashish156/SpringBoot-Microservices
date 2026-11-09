@@ -13,6 +13,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class ProductRequestDto {
 	
+	
 	private String name;
 	private String description;
 	private BigDecimal price;
