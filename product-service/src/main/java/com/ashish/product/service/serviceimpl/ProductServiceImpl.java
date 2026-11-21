@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.ashish.product.service.dto.ProductRequestDto;
 import com.ashish.product.service.dto.ProductResponseDto;
+import com.ashish.product.service.exception.ProductNotFoundException;
 import com.ashish.product.service.model.Product;
 import com.ashish.product.service.repository.ProductRepository;
 import com.ashish.product.service.service.ProductService;
@@ -49,7 +50,7 @@ public class ProductServiceImpl implements ProductService {
 				// Step 2: If the product exists, convert Product Entity into ProductResponseDto
 				.map(p -> mapToDto(p))
 				// Step 3: If the product does not exist, throw an exception
-				.orElseThrow(() -> new RuntimeException("product not found in db" + productId));
+				.orElseThrow(() -> new ProductNotFoundException("product not found in db:" + productId));
 	}
 
 	@Override
@@ -64,7 +65,7 @@ public class ProductServiceImpl implements ProductService {
 	public ProductResponseDto updateProduct(Long productId, ProductRequestDto productRequestDto) {
 		// Step 1: Find existing product by ID
 		Product product = productRepository.findById(productId)
-				.orElseThrow(() -> new RuntimeException("product not found in db" + productId));
+				.orElseThrow(() -> new ProductNotFoundException("product not found in db:" + productId));
 		// Step 2: Copy request DTO properties into existing Product entity
 		BeanUtils.copyProperties(productRequestDto, product);
 		// Step 3: Save updated product into database
@@ -77,7 +78,7 @@ public class ProductServiceImpl implements ProductService {
 	public void deleteProduct(Long productId) {
 		// Step 1: Find existing product by ID
 		Product product = productRepository.findById(productId)
-				.orElseThrow(() -> new RuntimeException("product not found in db" + productId));
+				.orElseThrow(() -> new ProductNotFoundException("product not found in db:" + productId));
 		// Step 2: delete product into database
 		productRepository.delete(product);
 	}

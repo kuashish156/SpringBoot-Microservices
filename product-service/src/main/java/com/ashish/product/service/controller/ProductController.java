@@ -22,6 +22,7 @@ import com.ashish.product.service.service.ProductService;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -37,7 +38,7 @@ public class ProductController {
 
 	@PostMapping
 	@Operation(summary = "Create new product", description = "Creates a new product and saves it in the database.")
-	public ResponseEntity<ProductResponseDto> createProduct(@RequestBody ProductRequestDto productRequestDto) {
+	public ResponseEntity<ProductResponseDto> createProduct(@Valid @RequestBody ProductRequestDto productRequestDto) {
 
 		ProductResponseDto createdProduct = productService.addProduct(productRequestDto);
 
