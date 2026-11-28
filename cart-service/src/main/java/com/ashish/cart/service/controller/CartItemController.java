@@ -22,11 +22,13 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
 @RestController
 @RequestMapping("/api/v1/cart")
 @RequiredArgsConstructor
 @Tag(name = "cart managemet", description = "APIs for adding, viewing, updating and removing cart items.")
+@Slf4j
 public class CartItemController {
 
 	private final CartItemService cartItemService;
@@ -35,6 +37,7 @@ public class CartItemController {
 	@Operation(summary = "Add item to cart", description = "User can add item in cart ")
 	public ResponseEntity<CartItemResponseDto> addToCart(@Valid @RequestBody CartItemRequestDto cartItemRequestDto) {
 		CartItemResponseDto addedToCart = cartItemService.addToCartItem(cartItemRequestDto);
+		log.info("Cart item added successfully | Product ID: {} | Quantity: {} | User ID: {}",cartItemRequestDto.getId(),cartItemRequestDto.getQuantity(),cartItemRequestDto.getUserId());
 		return ResponseEntity.status(HttpStatus.CREATED).body(addedToCart);
 
 	}
